@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charbet="UTF-8">
+    <title>How to use - Git e GitHub</title>
+</head>
+
+<style>
+    table, tr, td {
+      border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <h1>How to use - Git e GitHub</h1>
+    <p><h2> Discentes </h2></p>
+    <ul> 
+        <li> <b> Nome:</b> João Gabriel Martins Lopes <b>Matrícula:</b> 2024.1.08.015</li>
+        <li> <b> Nome:</b> Luís Felipe Barbosa Leite <b>Matrícula:</b> 2024.1.08.018</li>
+    </ul>
+
+    <img src="./img/imagem.jpeg"  controls="controls"></audio>
+    
+    <p>O <b>Git</b> é um sistema de <mark>controle de versão</mark> distribuído amplamente utilizado para o rastreamento de
+        alterações em projetos de software. Ele permite que você mantenha um histórico completo de todas as alterações
+        feitas em seu código, facilita colaboração com outras pessoas e gerencie diferentes versões do seu projeto.
+        Vamos explorar os comandos, Git mais comuns e como configurar e acessar um repositório no GitHub.</p>
+
+    <ul>
+        <ul>
+            <li><b> init:</b> Este comando é usado para inicializar um novo repositório Git em um diretório local.
+                Quando você executa git <small>init</small>, o Git cria uma pasta oculta chamada .git que contém todos os metadados
+                necessários para o controle de versão.</li>
+            <li><b> clone:</b> Utilizado para criar uma cópia local de um repositório Git remoto. Basta executar git
+                clone <i>URL_do_repositório</i> para clonar um repositório.</li>
+            <li><b> branch:</b> Permite criar, listar ou excluir branches (ramificações) em um repositório. Por
+                exemplo, git branch lista todas as branches, e git branch <i>nome_da_branch</i> cria uma nova branch.</li>
+            <li><b> checkout:</b> É usado para alternar entre branches ou restaurar arquivos. Por exemplo, git
+                checkout nome_da_branch muda para a branch especificada.</li>
+            <li><b> status:</b> Mostra o status atual do seu repositório. Indica quais arquivos foram modificados,
+                adicionados ou removidos desde o último commit.
+            </li>
+            <li><b> diff:</b> Exibe as diferenças entre alterações feitas em arquivos. git diff mostra as diferenças
+                entre o diretório de trabalho e o índice (staging area).</li>
+            <li><b> add:</b> Adiciona mudanças ao índice (staging area) para prepará-las para um commit. Por exemplo,
+                git add <i>nome_do_arquivo</i> adiciona um arquivo específico.</li>
+            <li><b> commit:</b> Registra as alterações feitas no repositório. É acompanhado por uma mensagem que
+                descreve as alterações. Por exemplo, git commit -m "Mensagem do commit".</li>
+            <li><b> push:</b> Envia commits locais para um repositório remoto. Por exemplo, git push origin
+                <i>nome_da_branch</i> envia os commits para a branch especificada no repositório remoto.</li>
+            <li><b> pull:</b> Atualiza o repositório local com as alterações do repositório remoto. git pull combina
+                as alterações do repositório remoto com o branch local atual.</li>
+            <li><b> revert:</b> Desfaz um commit específico, criando um novo commit com as alterações revertidas.
+            </li>
+            <li><b> merge:</b> Combina alterações de diferentes branches. Por exemplo, git merge <i>nome_da_branch</i>
+                mescla as alterações da branch especificada na branch atual.</li>
+            <li><b> stabh:</b> Guarda temporariamente mudanças que não estão prontas para serem commitadas,
+                permitindo que você limpe o diretório de trabalho.</li>
+            <li><b> rm:</b> Remove arquivos do diretório de trabalho e do índice. Por exemplo, git rm <i>nome_do_arquivo</i>
+                remove o arquivo especificado.</li>
+            <li><b> config:</b> Configura opções específicas do usuário, como nome de usuário e endereço de e-mail.
+                git config --global user.name "Seu Nome".</li>
+            <li><b> reset:</b> Permite desfazer alterações no diretório de trabalho ou no índice. Por exemplo, git
+                reset HEAD <i>nome_do_arquivo</i> remove o arquivo do índice.</li>
+            <li><b> remote:</b> Gerencia repositórios remotos. Por exemplo, git remote add origin <i>URL_do_repositório</i>
+                adiciona um repositório remoto chamado 'origin'.</li>
+            <li><b> fetch:</b> Baixa commits, arquivos e referências de um repositório remoto para o repositório
+                local. Por exemplo, git fetch origin atualiza as informações do repositório remoto 'origin'.</li>
+            <li><b> show:</b> Exibe informações sobre commits, tags ou objetos Git. Por exemplo, git show
+                <i>hash_do_commit</i> mostra informações sobre um commit específico.</li>
+            <li><b> help:</b> Exibe a documentação de um comando específico. Por exemplo, git help commit mostra
+                informações sobre o comando git commit.</li>
+            <li><b> rebabe:</b> Aplica commits de uma branch em cima de outra branch. Por exemplo, git rebase
+                <i>branch_destino</i> move os commits da branch atual para a branch destino.</li>
+            <li><b> blame:</b> Mostra quem modificou cada linha de um arquivo e em qual commit essa modificação foi
+                feita.</li>
+            <li><b> tag:</b> Cria, lista ou verifica tags anotadas ou não anotadas. Por exemplo, git tag -a v1.0 -m
+                "Versão 1.0" cria uma tag anotada com a mensagem especificada.</li>
+        </ul>
+
+    </ul>
+
+    <h2>Os 5 mais usados</h2>
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Funcionalidade</td>
+        </tr>
+        <tr>
+            <td>init</td>
+            <td>Prepara um diretório para controle de versão do Git.</td>
+        </tr>
+        <tr>
+            <td>clone</td>
+            <td>Cria uma cópia local de um repositório remoto do Git.</td>
+        </tr>
+        <tr>
+            <td>add</td>
+            <td>Adiciona mudanças ao próximo commit no repositório Git.</td>
+        </tr>
+        <tr>
+            <td>commit</td>
+            <td>Registra as mudanças no repositório Git com uma mensagem descritiva.</td>
+        </tr>
+        <tr>
+            <td>pull</td>
+            <td>Atualiza o repositório local com as últimas alterações remotas.</td>
+        </tr>
+    </table>
+
+    <a href="audio.html">Pagina do audio</a>
+    <a href="video.html">Pagina do video</a>
+
+</body>
+
+</html>
